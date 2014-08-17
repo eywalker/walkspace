@@ -102,6 +102,12 @@ alias gt='git t'
 alias gbg='git bisect good'
 alias gbb='git bisect bad'
 
+# Tmux
+alias tmat='tmux attach-session -t'
+alias tml='tmux list-sessions'
+alias tmns='tmux new-session -s'
+
+
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
