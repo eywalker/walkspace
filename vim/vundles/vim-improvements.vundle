@@ -1,28 +1,86 @@
-Bundle "AndrewRadev/splitjoin.vim"
-Bundle "Raimondi/delimitMate"
+" Easily toggle between single vs multiline expressions
+"Bundle "AndrewRadev/splitjoin.vim"
+
+" Auto closing of quotes, paranthesis, brackets, etc.
+"Bundle "Raimondi/delimitMate"
+
+" Autocompletion framework
 Bundle "Shougo/neocomplete.git"
-Bundle "briandoll/change-inside-surroundings.vim.git"
-Bundle "godlygeek/tabular"
-Bundle "tomtom/tcomment_vim.git"
-Bundle "vim-scripts/camelcasemotion.git"
-Bundle "vim-scripts/matchit.zip.git"
-Bundle "terryma/vim-multiple-cursors"
-Bundle "Keithbsmiley/investigate.vim"
-Bundle "chrisbra/NrrwRgn"
-Bundle "MarcWeber/vim-addon-mw-utils.git"
-Bundle "bogado/file-line.git"
-Bundle "mattn/webapi-vim.git"
-Bundle "sjl/gundo.vim"
-Bundle "skwp/YankRing.vim"
-Bundle "tomtom/tlib_vim.git"
-Bundle "tpope/vim-abolish"
-Bundle "tpope/vim-endwise.git"
-Bundle "tpope/vim-ragtag"
-Bundle "tpope/vim-repeat.git"
-Bundle "tpope/vim-surround.git"
-Bundle "tpope/vim-unimpaired"
-Bundle "vim-scripts/AnsiEsc.vim.git"
-Bundle "vim-scripts/AutoTag.git"
-Bundle "vim-scripts/lastpos.vim"
-Bundle "vim-scripts/sudo.vim"
-Bundle "goldfeld/ctrlr.vim"
+
+" Change the content of the innermost 'surrounding"
+"Bundle "briandoll/change-inside-surroundings.vim.git"
+
+" Easily align texts
+"Bundle "godlygeek/tabular"
+
+" Syntax aware comment/uncomment tool
+"Bundle "tomtom/tcomment_vim.git"
+
+" Move within CamelCaseWords easily
+"Bundle "vim-scripts/camelcasemotion.git"
+
+" Extended % matching for HTML, LaTeX, etc
+"Bundle "vim-scripts/matchit.zip.git"
+
+" Sublime text like multi cursor tool
+"Bundle "terryma/vim-multiple-cursors"
+
+" Open up documentation - works well with Dash
+"Bundle "Keithbsmiley/investigate.vim"
+
+" Narrow region editing
+"Bundle "chrisbra/NrrwRgn"
+
+" Library of addons
+"Bundle "MarcWeber/vim-addon-mw-utils.git"
+
+" Open a file at a given line
+"Bundle "bogado/file-line.git"
+
+" Webinterface to work with web contents directly
+"Bundle "mattn/webapi-vim.git"
+
+" Graphical undo tree
+"Bundle "sjl/gundo.vim"
+
+" Maintains history of yanks
+"Bundle "skwp/YankRing.vim"
+
+" Collection of utility functions
+"Bundle "tomtom/tlib_vim.git"
+
+" Search for, substitute, and abbreviate words
+"Bundle "tpope/vim-abolish"
+
+" End programming structure automatically (mostly Ruby)
+"Bundle "tpope/vim-endwise.git"
+
+" HTML/XML mappings
+"Bundle "tpope/vim-ragtag"
+
+" Enable repeating supported plugin maps with '.'
+"Bundle "tpope/vim-repeat.git"
+
+" Quickly change surroundings
+"Bundle "tpope/vim-surround.git"
+
+" Handy bracket mappings
+"Bundle "tpope/vim-unimpaired"
+
+" Conceals escape sequences
+"Bundle "vim-scripts/AnsiEsc.vim.git"
+
+" Update entries in a tags file automatically when saving
+"Bundle "vim-scripts/AutoTag.git"
+
+" Last position jump plugin
+"Bundle "vim-scripts/lastpos.vim"
+
+" Open and edit a file with sudo but not the whole session
+"Bundle "vim-scripts/sudo.vim"
+
+" Ex command history reverse-i-search
+"Bundle "goldfeld/ctrlr.vim"
+
+" Seamless navigation between tmux panes and vim splits
+Bundle "christoomey/vim-tmux-navigator"

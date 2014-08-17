@@ -11,13 +11,13 @@ task :install => [:submodule_init, :submodules] do
   puts
 
   install_homebrew if RUBY_PLATFORM.downcase.include?("darwin")
-  install_rvm_binstubs
+  #install_rvm_binstubs
 
   # this has all the runcoms from this directory.
   file_operation(Dir.glob('git/*')) if want_to_install?('git configs (color, aliases)')
-  file_operation(Dir.glob('irb/*')) if want_to_install?('irb/pry configs (more colorful)')
-  file_operation(Dir.glob('ruby/*')) if want_to_install?('rubygems config (faster/no docs)')
-  file_operation(Dir.glob('ctags/*')) if want_to_install?('ctags config (better js/ruby support)')
+  #file_operation(Dir.glob('irb/*')) if want_to_install?('irb/pry configs (more colorful)')
+  #file_operation(Dir.glob('ruby/*')) if want_to_install?('rubygems config (faster/no docs)')
+  #file_operation(Dir.glob('ctags/*')) if want_to_install?('ctags config (better js/ruby support)')
   file_operation(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   file_operation(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   if want_to_install?('vim configuration (highly recommended)')
@@ -31,7 +31,7 @@ task :install => [:submodule_init, :submodules] do
 
   install_term_theme if RUBY_PLATFORM.downcase.include?("darwin")
 
-  run_bundle_config
+  #run_bundle_config
 
   success_msg("installed")
 end
@@ -172,7 +172,10 @@ def install_homebrew
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
   run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher}
-  run %{brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit}
+  run %{brew install python python3}
+  puts "Installing vim with python3 support. Currently cannot support both python2 and python3 in vim"
+  run %{brew install vim --with-python3 --with-lua --with-lua-jit}
+  #run %{brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit}
   puts
   puts
 end
@@ -287,7 +290,7 @@ end
 
 def want_to_install? (section)
   if ENV["ASK"]=="true"
-    puts "Would you like to install configuration files for: #{section}? [y]es, [n]o"
+    puts "Would you like to install configuration files for: #{section}? [y]es, [N]o"
     STDIN.gets.chomp == 'y'
   else
     true

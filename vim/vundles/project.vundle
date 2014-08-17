@@ -1,5 +1,14 @@
 Bundle "jistr/vim-nerdtree-tabs.git"
 Bundle "scrooloose/nerdtree.git"
-Bundle "kien/ctrlp.vim"
-Bundle "xolox/vim-misc"
-Bundle "xolox/vim-session"
+
+" Fuzzy file search
+" Bundle "kien/ctrlp.vim"
+
+" Dependency for vim-session
+" Bundle "xolox/vim-misc"
+
+" Session management
+" Bundle "xolox/vim-session"
+
+" Easy to use task listing
+Bundle "vim-scripts/TaskList.vim"

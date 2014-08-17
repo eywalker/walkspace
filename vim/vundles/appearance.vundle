@@ -1,6 +1,17 @@
-Bundle "chrisbra/color_highlight.git"
+" Provides highlighting of color terms and syntax
+"Bundle "chrisbra/color_highlight.git"
+
+" Modified solarized colorscheme
 Bundle "skwp/vim-colors-solarized"
+
+" light status line addon
 Bundle "itchyny/lightline.vim"
-Bundle "jby/tmux.vim.git"
-Bundle "morhetz/gruvbox"
-Bundle "xsunsmile/showmarks.git"
+
+" Provide syntax highlighting when editing tmux config
+" Bundle "jby/tmux.vim.git"
+
+" Gruvbox colorscheme
+"Bundle "morhetz/gruvbox"
+
+" Visualization of location marks
+"Bundle "xsunsmile/showmarks.git"

@@ -1,4 +1,11 @@
-Bundle "gregsexton/gitv"
-Bundle "mattn/gist-vim"
+" gitk for vim
+" Bundle "gregsexton/gitv"
+
+" Gist interface
+" Bundle "mattn/gist-vim"
+
+" Git wrapper
 Bundle "tpope/vim-fugitive"
+
+" Syntax highlighting for git
 Bundle "tpope/vim-git"

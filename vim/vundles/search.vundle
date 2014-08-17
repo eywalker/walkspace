@@ -1,6 +1,17 @@
-Bundle "justinmk/vim-sneak"
-Bundle "rking/ag.vim"
-Bundle "vim-scripts/IndexedSearch"
-Bundle "nelstrom/vim-visual-star-search"
-Bundle "skwp/greplace.vim"
-Bundle "Lokaltog/vim-easymotion"
+" move to specified sequence of characters easily
+"Bundle "justinmk/vim-sneak"
+
+" Vim front-end for ag
+"Bundle "rking/ag.vim"
+
+" shows 'Nth match out of M' at every search
+"Bundle "vim-scripts/IndexedSearch"
+
+" start a * or # search from a visual block
+"Bundle "nelstrom/vim-visual-star-search"
+
+" global search and replace
+"Bundle "skwp/greplace.vim"
+
+" Advanced motion plugin
+"Bundle "Lokaltog/vim-easymotion"

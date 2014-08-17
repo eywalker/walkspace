@@ -1,15 +1,47 @@
-Bundle "briancollins/vim-jst"
-Bundle "pangloss/vim-javascript"
-Bundle "rodjek/vim-puppet"
-Bundle "othree/javascript-libraries-syntax.vim"
-Bundle "digitaltoad/vim-jade.git"
-Bundle "groenewege/vim-less.git"
-Bundle "itspriddle/vim-jquery.git"
-Bundle "jtratner/vim-flavored-markdown.git"
-Bundle "kchmck/vim-coffee-script"
-Bundle "scrooloose/syntastic.git"
-Bundle "garbas/vim-snipmate.git"
-Bundle "nelstrom/vim-markdown-preview"
-Bundle "skwp/vim-html-escape"
-Bundle "tpope/vim-haml"
-Bundle "honza/vim-snippets"
+" JST/EJS (javascript template) code highlighting
+"Bundle "briancollins/vim-jst"
+
+" Javascript indentation and syntax highlighting
+"Bundle "pangloss/vim-javascript"
+
+" PuppetLab automation
+"Bundle "rodjek/vim-puppet"
+
+" Javascript library syntax highlighting
+"Bundle "othree/javascript-libraries-syntax.vim"
+
+" Jade template library syntax highlighting
+"Bundle "digitaltoad/vim-jade.git"
+
+" LESS - dynamic style-sheet highlighting
+"Bundle "groenewege/vim-less.git"
+
+" jQuery syntax highlighting
+"Bundle "itspriddle/vim-jquery.git"
+
+" Github Flavored Markdown highlighting
+"Bundle "jtratner/vim-flavored-markdown.git"
+
+" CoffeeScript syntax highlightin
+"Bundle "kchmck/vim-coffee-script"
+
+" Syntax check engine
+"Bundle "scrooloose/syntastic.git"
+
+" Textual snippet engine
+"Bundle "garbas/vim-snipmate.git"
+
+" Previews GitHub flavored markdown in a browser
+"Bundle "nelstrom/vim-markdown-preview"
+
+" Tool to easily escape/unescape html
+"Bundle "skwp/vim-html-escape"
+
+" Runtime files for Haml, Sass, and SCSS
+"Bundle "tpope/vim-haml"
+
+" Vim-snipmate default snippets
+"Bundle "honza/vim-snippets"
+
+" Python autocompletion engine
+Bundle "davidhalter/jedi-vim"
