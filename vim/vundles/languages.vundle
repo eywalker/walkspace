@@ -43,5 +43,4 @@
 " Vim-snipmate default snippets
 "Bundle "honza/vim-snippets"
 
-" Python autocompletion engine
-Bundle "davidhalter/jedi-vim"
+

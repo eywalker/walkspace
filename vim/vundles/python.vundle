@@ -1,0 +1,5 @@
+" Python autocompletion engine
+Bundle "davidhalter/jedi-vim"
+
+" Collection of python related addons
+Bundle "klen/python-mode"

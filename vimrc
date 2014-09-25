@@ -10,19 +10,28 @@ endif
 
 " ================ General Config ====================
 
+" =============== Display settings ===================
 set number                      "Line numbers are good
-set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=1000                "Store lots of :cmdline history
+set cursorline                  "Highlight the line the cursor is at
 set showcmd                     "Show incomplete cmds down the bottom
-set showmode                    "Show current mode down the bottom
+set noshowmode                  "Don't show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
-set autoread                    "Reload files changed outside vim
+set mouse=a
 
-" This makes vim act like all other editors, buffers can
-" exist in the background without being in a window.
-" http://items.sjbach.com/319/configuring-vim-right
-set hidden
+
+" ============ Cursor related settings ===============
+set backspace=indent,eol,start  "Allow backspace in insert mode
+
+" ================ File settings =====================
+set confirm                     "Confirm exit when there are unsaved files
+set autoread                    "Reload files changed outside vim
+set hidden                      "Allow buffer to exist without a window
+set noswapfile                  "Prevent swap files to be made while editing a file
+set nobackup                    "Prevent backup files to be made while editing a file
+set nowb                        "Prevent backup from being created when overwriting a file
+
 
 "turn on syntax highlighting
 syntax on
@@ -40,11 +49,9 @@ if filereadable(expand("~/.vim/vundles.vim"))
   source ~/.vim/vundles.vim
 endif
 
-" ================ Turn Off Swap Files ==============
-
-set noswapfile
-set nobackup
-set nowb
+" =============== Filetype Associations ===============
+" Set .md to be associated with markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
@@ -56,7 +63,6 @@ if has('persistent_undo')
 endif
 
 " ================ Indentation ======================
-
 set autoindent
 set smartindent
 set smarttab
@@ -95,7 +101,6 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
 " ================ Scrolling ========================
 
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
@@ -103,5 +108,5 @@ set sidescrolloff=15
 set sidescroll=1
 
 
-" ================ Custom Settings ========================
+" ================ Plugin Specific Settings ========================
 so ~/.yadr/vim/settings.vim
