@@ -18,7 +18,7 @@ set showcmd                     "Show incomplete cmds down the bottom
 set noshowmode                  "Don't show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
-set mouse=a
+set mouse=a                     "Enable mouse
 
 
 " ============ Cursor related settings ===============
@@ -42,12 +42,43 @@ syntax on
 " the plugins.
 let mapleader=","
 
+" =============== NeoBundle Setup ====================
+if has('vim_starting')
+  set nocompatible
+
+  " Required:
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#begin(expand('~/.vim/bundle'))
+
+" Let NeoBundle manage itself
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove Bundles here:
+
+
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundle.vim
 " Use Vundle plugin to manage all other plugins
 if filereadable(expand("~/.vim/vundles.vim"))
   source ~/.vim/vundles.vim
 endif
+
+NeoBundle 'tpope/vim-fugitive'
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+" ============= End NeoBundle Setup ===================
 
 " =============== Filetype Associations ===============
 " Set .md to be associated with markdown

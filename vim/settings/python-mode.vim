@@ -14,6 +14,7 @@ let g:pymode_run_bind = '<leader>f'
 " Linting
 let g:pymode_link = 1
 let g:pymode_link_checker = ['pyflakes', 'pep8', 'mccabe']
+
 " Auto check on save
 let g:pymode_lint_write = 1
 
@@ -31,7 +32,7 @@ let g:pymode_syntax_indent_errors = g:pymode_syntax_all
 let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Enable auto-folding
-let g:pymode_folding = 1
+let g:pymode_folding = 0
 
 
 
